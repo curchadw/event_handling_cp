@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main"></div>
+        <div class="controller">
+            <div class="album">
+                <img src="assets/relaxation.jpg" alt="Rocks balancing" width='70' height='70'>
+            </div>
+            <div class="controls">
+                <div id="play_pause"></div>
+                <progress class='progress' max='100' value='0'></progress>
+            </div>
+            <div>
+                <progress max='100' value='100'></progress>
+            </div>
+        </div>
+        <audio id='audio' src="assets/some_song.mp3"></audio>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
