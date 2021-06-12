@@ -13,3 +13,18 @@ const pause = () =>{
     audio.pause()
 }
 
+// audio.ontimeupdate(()=>{
+//     let time = (audio.currentTime/audio.duration)*100
+//     let progress = Math.round(time);
+//     document.getElementById('progress').value = progress
+// })
+
+audio.addEventListener('timeupdate',(e)=>{
+    console.log('Playing')
+    let time = (audio.currentTime/audio.duration)*100
+    let progress = Math.round(time);
+    document.getElementById('progress').value = progress
+})
+
+audio.volume = .03
+
